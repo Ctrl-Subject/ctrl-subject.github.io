@@ -189,7 +189,7 @@ section.active {
   height: 30%;
   border-radius: 50% 50% 0 0;
   background: #6cbf6c;
-  animation: hillMove 30s linear infinite;
+  animation: hillMove 30s linear infinite alternate;
 }
 
 .hill2 {
@@ -197,7 +197,7 @@ section.active {
   left: 0;
   height: 25%;
   background: #4ca14c;
-  animation: hillMove 60s linear infinite reverse;
+  animation: hillMove 60s linear infinite alternate-reverse;
 }
 
 @keyframes hillMove {
@@ -208,4 +208,5 @@ section.active {
 /* -----------------------
    Flowers
 ------------------------*/
+
 
