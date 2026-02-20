@@ -8,7 +8,6 @@ body {
 header {
     background: rgb(231, 206, 181);
     color: black;
-    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,3 +208,4 @@ section.active {
 /* -----------------------
    Flowers
 ------------------------*/
+
