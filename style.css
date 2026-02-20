@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: #333;
+}
+
+header {
+    background: rgb(231, 206, 181);
+    color: black;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a { 
+	border-color: 3px black;
+	color: #B97A57;
+    margin-left: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+	
+header nav a.active {
+    color: #A349A4;
+    margin-left: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+section {
+    display: none; /* hide all sections by default */
+    padding: 2rem;
+}
+
+section.active {
+    display: block; /* show the active section */
+}
+
+#projectDetails {
+	text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skills span {
+    background: #1e90ff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    display: inline-block;
+}
+	
+.rounded-image {
+	border-radius: 15%;
+	width: 200px;
+	height: auto;
+}
+/* HAMBURGER */
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.menu-toggle span {
+	width: 25px;
+	height: 3px;
+	background: white;
+	transition: 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+	nav {
+		border: 2px solid rgba(0,0,0,0.3);
+		position: absolute;
+		top: 70px;
+		right: 0;
+		background: rgba(231, 206, 181, 1.5);
+		width: 220px;
+		flex-direction: column;
+		overflow: hidden;
+
+		max-height: 0;
+		opacity: 0;
+		transition: max-height 0.4s ease, opacity 0.3s ease;
+	}	
+
+	nav a {
+		display: block;          /* ⬅ important */
+		width: 100%;             /* ⬅ full row */
+		padding: 12px 16px;      /* spacing */
+		margin: 0;               /* remove left margin */
+		border-bottom: 1px solid rgba(0,0,0,0.3);
+	}
+
+	nav a:last-child {
+		border-bottom: none;
+	}
+
+	nav.show {
+		max-height: 500px;
+		opacity: 1;
+	}
+
+	.menu-toggle {
+		display: flex;
+	}
+}
+
+
+
+
+/* =============================
+   Cartoon Background Scene
+   ============================= */
+.cartoon-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* content still clickable */
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(to top, #87ceeb 0%, #b3e5fc 100%); /* cartoony sky */
+}
+
+/* -----------------------
+   Clouds
+------------------------*/
+.cloud {
+  position: absolute;
+  top: 10%;
+  width: 120px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+  animation: cloudMove 60s linear infinite;
+}
+
+.cloud1 { left: -150px; animation-delay: 0s; }
+.cloud2 { left: -200px; animation-delay: 15s; }
+.cloud3 { left: -250px; animation-delay: 30s; }
+
+@keyframes cloudMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(120vw); }
+}
+
+/* -----------------------
+   Hills
+------------------------*/
+.hill {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 30%;
+  border-radius: 50% 50% 0 0;
+  background: #6cbf6c;
+  animation: hillMove 30s linear infinite;
+}
+
+.hill2 {
+  bottom: 0;
+  left: 0;
+  height: 25%;
+  background: #4ca14c;
+  animation: hillMove 60s linear infinite reverse;
+}
+
+@keyframes hillMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* -----------------------
+   Flowers
+------------------------*/

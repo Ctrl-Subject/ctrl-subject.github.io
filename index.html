@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Ellie-Mae Dawson Portfolio</title>
+
+</head>
+<body>
+
+<!-- Cartoon Background Scene -->
+<div class="cartoon-background">
+
+  <!-- Hills -->
+  <div class="hill hill1"></div>
+  <div class="hill hill2"></div>
+</div>
+
+
+
+<header>
+  <h1>Ellie-Mae Dawson</h1>
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <nav id="nav-menu">
+    <a data-target="home" class="active">Home</a>
+    <a data-target="about">About</a>
+    <a data-target="projects">Projects</a>
+    <a data-target="education">Education</a>
+    <a data-target="skills">Skills</a>
+    <a data-target="resume">resume</a>
+    <a data-target="contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="active">
+	<h2>home</h2>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a passionate programmer building web and software apps.</p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-card" id="projectDetails">
+		<img src="Files/RCUT.png" class="rounded-image">
+		<h4>RayCasting Utility Toolkit -OpenGL Extension-<h4>
+		<p>RCUT (Raycasting Utility Toolkit) is an API built on top of OpenGL's GLUT. It was designed for developers—including myself—who want to create raytraced-style games more easily.
+			The toolkit abstracts away much of the backend work typically required for graphics programming, allowing developers to focus primarily on building the game itself. 
+			In that sense, RCUT functions similarly to a game engine like Unity, but without the full UI and editor components.
+		</p>
+		<table style = "width: 100%; text-align: center;">
+			<tr style = "text-align: center;">
+				<th>Website: </th>
+				<th> link here </th>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+	</div>
+	
+    <div class="project-card" id="projectDetails">
+		<h4>GP project Manager</h4>
+	</div>
+    
+	<div class="project-card" id="projectDetails">
+		<h4>TBC</h4>
+	</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Python</span>
+    <span>C / C++</span>
+    <span>SQL</span>
+    <span>MySQL</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: bendawson2008@gmail.com</p>
+  <p>GitHub: github.com/Ctrl-Subject</p>
+</section>
+
+<script>
+const links = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+const toggle = document.getElementById("menu-toggle");
+const nav = document.getElementById("nav-menu");
+
+// Page switching
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    const target = link.getAttribute('data-target');
+
+    sections.forEach(sec => {
+      sec.classList.toggle('active', sec.id === target);
+    });
+
+    links.forEach(l => {
+      l.classList.toggle('active', l === link);
+    });
+
+    nav.classList.remove("show"); // close mobile menu after click
+  });
+});
+
+// Mobile toggle
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("show");
+  toggle.classList.toggle("active");
+});
+</script>
+
+
+</body>
+</html>
