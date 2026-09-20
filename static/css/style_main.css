@@ -394,6 +394,22 @@ section.active {
     text-decoration: underline;
 }
 
+.rcut-card {
+    background: #E1BE9D;
+}
+
+.pacman-card {
+    background: #ffffff;
+}
+
+.solar-card {
+    background: #dff7df;
+}
+
+.adrat-card {
+    background: #ffffff;
+}
+
 
 /* =========================================
    TECHNOLOGY TILES
