@@ -35,8 +35,150 @@
 
     <main>
         <section id="home" class="active">
-            <h1 class="outline-title">Welcome</h1>
+            <section id="home" class="active">
+
+                <!-- Hero -->
+                <div class="home-hero">
+                    <p class="home-eyebrow">COMPUTER SCIENCE • SOFTWARE • ENGINEERING</p>
+
+                    <h1 class="home-title">
+                        Hi, I'm <span>Ellie-Mae Dawson</span>
+                    </h1>
+
+                    <h2 class="home-subtitle">
+                        Developer &amp; Computer Science Enthusiast
+                    </h2>
+
+                    <p class="home-description">
+                        I build software, experiment with systems, and enjoy solving
+                        challenging problems through programming and engineering.
+                    </p>
+
+                    <div class="home-buttons">
+                        <a href="#" data-target="projects" class="home-button primary">
+                            View Projects
+                        </a>
+
+                        <a href="#" data-target="about" class="home-button secondary">
+                            About Me
+                        </a>
+
+                        <a href="#" data-target="resume" class="home-button secondary">
+                            Resume
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Featured Projects -->
+                <div class="home-section">
+                    <div class="home-section-heading">
+                        <h2>Featured Projects</h2>
+                        <a href="#" data-target="projects">View all →</a>
+                    </div>
+
+                    <div class="featured-projects">
+
+                        <div class="featured-card">
+                            <div class="featured-card-content">
+                                <span class="project-label">GAME ENGINE</span>
+
+                                <h3>RCUT</h3>
+
+                                <p>
+                                    A C/C++ OpenGL rendering toolkit designed to provide
+                                    the core systems needed to develop games.
+                                </p>
+
+                                <a href="https://geordie-pride-software.github.io/frontend/html/products.html"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    Learn more →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="featured-card">
+                            <div class="featured-card-content">
+                                <span class="project-label">GAME DEVELOPMENT</span>
+
+                                <h3>Pacman Raycasted</h3>
+
+                                <p>
+                                    A raycasted interpretation of the classic Pac-Man
+                                    concept, developed using a DDA raycasting algorithm.
+                                </p>
+
+                                <a href="#" data-target="projects">
+                                    Learn more →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="featured-card">
+                            <div class="featured-card-content">
+                                <span class="project-label">SYSTEMS</span>
+
+                                <h3>AdRAT</h3>
+
+                                <p>
+                                    A developing administrative tool for centralized
+                                    management of devices across networked environments.
+                                </p>
+
+                                <a href="#" data-target="projects">
+                                    Learn more →
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Technologies -->
+                <div class="home-section">
+                    <div class="home-section-heading">
+                        <h2>Technologies</h2>
+                        <a href="#" data-target="skills">View skills →</a>
+                    </div>
+
+                    <div class="technology-list">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>C#</span>
+                        <span>Python</span>
+                        <span>OpenGL</span>
+                        <span>SQL</span>
+                        <span>Windows</span>
+                    </div>
+                </div>
+
+
+                <!-- Call to action -->
+                <div class="home-cta">
+                    <h2>Interested in my work?</h2>
+
+                    <p>
+                        Explore my projects or learn more about my background and
+                        experience.
+                    </p>
+
+                    <div class="home-buttons">
+                        <a href="#" data-target="about" class="home-button secondary">
+                            About Me
+                        </a>
+
+                        <a href="#" data-target="contact" class="home-button primary">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+
+            </section>
         </section>
+
+
 
         <section id="about">
             <h1 class="outline-title">About Me</h1>
@@ -59,6 +201,8 @@
                 </p>
             </div>
         </section>
+
+
 
         <section id="projects">
             <h1 class="outline-title">Projects</h1>
@@ -115,12 +259,16 @@
             </div>
         </section>
 
+
+
         <section id="education">
             <h1 class="outline-title">Education</h1>
             <div class="project-card">
                 <p>Currently studying Computer Science at A Level.</p>
             </div>
         </section>
+
+
 
         <section id="skills">
             <h1 class="outline-title">Skills</h1>
@@ -165,19 +313,25 @@
                 </ul>
             </div>
 
+
+
             <h1 class="outline-title">Technologies</h1>
             <div class="project-card" id="projectDetails">
                 <div class="skills">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Python</span>
-                    <span>C / C++</span>
-                    <span>C#</span>
-                    <span>SQL</span>
-                    <span>MySQL</span>
+                    <a href="https://www.mysql.com/" aria-label="MySQL"><img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff" alt="MySQL"></a>
+                    <a href="https://www.c-language.org/" aria-label="C"><img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white" alt="C"></a>
+                    <a href="https://isocpp.org/" aria-label="C++"><img src="https://img.shields.io/badge/C%2B%2B-%2300599C.svg?logo=c%2B%2B&logoColor=white" alt="C++"></a>
+                    <a href="https://dotnet.microsoft.com/en-us/languages/csharp" aria-label="C#"><img src="https://custom-icon-badges.demolab.com/badge/C%23-%23239120.svg?logo=cshrp&logoColor=white" alt="C#"></a>
+                    <a href="https://www.python.org/" aria-label="Python"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff" alt="Python"></a>
+                    <a href="https://scratch.mit.edu/users/ctrl-subject/" aria-label="Scratch"><img src="https://img.shields.io/badge/Scratch-4D97FF?logo=scratch&logoColor=fff" alt="Scratch"></a>
+                    <a href="https://www.opengl.org/" aria-label="OpenGL"><img src="https://img.shields.io/badge/OpenGl-5487A6?logo=OpenGl&logoColor=fff" alt="OpenGL"></a>
+                    <a href="https://www.w3schools.com/" aria-label="W3Schools"><img src="https://img.shields.io/badge/W3Schools-04AA6D?logo=w3schools&logoColor=fff" alt="W3Schools"></a>
+                    <a href="https://www.microsoft.com/en-us/windows/" aria-label="Windows"><img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white" alt="Windows"></a>
                 </div>
             </div>
         </section>
+
+
 
         <section id="resume">
             <h1 class="outline-title">Resume</h1>
@@ -186,6 +340,8 @@
             </div>
         </section>
 
+
+        
         <section id="contact">
             <h1 class="outline-title">Contact</h1>
             <div class="project-card" id="projectDetails">
