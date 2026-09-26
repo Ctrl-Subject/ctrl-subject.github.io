@@ -290,6 +290,38 @@ section.active {
     transform: translateY(-3px);
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    background: white;
+    border: 1px solid #eadfd5;
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    border-color: #A349A4;
+    box-shadow: 0 4px 10px rgba(163, 73, 164, 0.16);
+}
+
+.social-links img,
+.social-links svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
 
 /* =========================================
    HOMEPAGE SECTIONS
